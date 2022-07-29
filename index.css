@@ -1,0 +1,100 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(224, 233, 233);
+  font-family: sans-serif;
+}
+
+.card-container{
+  margin:100px auto;
+  width:680px;
+  padding : 10px;
+  height : auto;
+}
+
+.card-container .card{
+  overflow: hidden;
+  display:block;
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px 0 #0001;
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: all 0.3s;
+}
+.card-container .card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 14px 0 #0005;
+
+}
+
+.card-container .image-session{
+  float : left;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.card-container .image-session .image{
+   width:250px;
+   height:220px;
+   display:block;
+   background-size:cover;
+   background-position: center;
+}
+
+
+.card-container .body .title{
+   height : 60px;
+   overflow: hidden;
+   font-size: 24px;
+   text-align: center;
+   margin:20px;
+  
+}
+
+.card-container .body{
+   margin : 20px;
+}
+
+.card-container .body .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-container .body .contact-info{
+   list-style-type: none;
+}
+
+.card-container .body .footer{
+  margin:20px;
+
+}
+
+ul li i span{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+}
+
+ul li i a{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  text-decoration: none ;
+  
+}
+
+.card-container .body .footer ul li{
+  display: inline;
+}
+
+
+@media screen and (max-width:780px){.card-container{    width: 96%;}
+    .card-container .card:hover{    transform: none;    box-shadow: none;}
+}
+@media screen and (max-width:560px){.card-container .image-session{    float: none;    margin-right: 0;}
+    .card-container .image-session .image{width: 100%;}
+}
